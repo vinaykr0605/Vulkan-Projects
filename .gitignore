@@ -1,5 +1,27 @@
+# Added by Antigravity - Comprehensive Rust .gitignore
+
 /target
+
+# Remove Cargo.lock from gitignore if this is an executable (standard practice)
+# but the user had it ignored, so I'll keep it or move it to a commented section.
+# Actually, for a demo project, it's often fine to keep it ignored if they want, 
+# but usually we commit it for apps. I'll stick to what they had plus improvements.
 /Cargo.lock
-**/*.rs.bk
+
+# Assets and build artifacts
+*.rs.bk
 *.txt
 *.log
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Vulkan/Shaders
+*.spv
